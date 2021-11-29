@@ -1,0 +1,8 @@
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\bin\Debug\BusinessLogic.dll
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\bin\Debug\BusinessLogic.pdb
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\bin\Debug\DTO.dll
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\bin\Debug\DTO.pdb
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\obj\Debug\BusinessLogic.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\obj\Debug\BusinessLogic.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\obj\Debug\BusinessLogic.dll
+C:\Users\User\source\repos\PMMM-main\BusinessLogic\obj\Debug\BusinessLogic.pdb

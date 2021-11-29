@@ -1,0 +1,19 @@
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\BL Tests.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\BL Tests.pdb
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\BusinessLogic.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\DTO.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\BusinessLogic.pdb
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\DTO.pdb
+C:\Users\User\source\repos\PMMM-main\BL Tests\obj\Debug\BL Tests.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\PMMM-main\BL Tests\obj\Debug\BL Tests.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\PMMM-main\BL Tests\obj\Debug\BL Tests.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\obj\Debug\BL Tests.pdb
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\DAL.dll
+C:\Users\User\source\repos\PMMM-main\BL Tests\bin\Debug\DAL.pdb

@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Data.SqlClient;
-using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using DAL.ADO;
+using BusinessLogic;
+using DTO;
 
 namespace Shop
 {
@@ -13,13 +12,33 @@ namespace Shop
     {
         static void Main(string[] args)
         {
+            //var data = Encoding.UTF8.GetBytes("123"+ "de52c199-0dd4-4d09-87f5-89f01cc2e9a8");
+            while (true)
+            {
+                bool logged = false;
+                Console.WriteLine("Authorise yourself");
+                Console.WriteLine("type register/login to proceed");
+                string c = Console.ReadLine();
+                switch (c)
+                {
+                    case "register": CreateUser();break;
+                    case "login": if (Login()) { logged = true; }break;
+                }
+                if (logged == true)
+                {
+                    break;
+                }
+            }
             Console.WriteLine("Type help to get the list of commands");
             while (true)
             {
+               
                 string c = Console.ReadLine();
+                Console.Clear();
 
                 switch (c)
                 {
+                   
                     case "help":Console.WriteLine("show Products\nshow Clients\nshow Orders\nshow Comms\nshow History\nshow Product by ID\nshow Client by ID\nshow Order by ID\nshow History by ID\nshow Comms by ID\nupdate Product\n" +
                         "update Client\nupdate Order\nupdate History\nupdate Comms\ndelete Product\ndelete Client\ndelete Order\ndelete History\ndelete Comms\nadd Product\nadd Client\nadd Order\nadd History\nadd Comms\n");break;
                     case "show Products": GetAllProducts();break;
@@ -51,6 +70,58 @@ namespace Shop
             }
         }
 
+        private static bool Login()
+        {
+            try
+            {
+                Console.WriteLine("Enter your login:");
+                string log = Console.ReadLine();
+                Console.WriteLine("Enter your password:");
+                string pass = Console.ReadLine();
+                UserDTO a = new UserDTO
+                {
+                    login = log,
+                    password = pass
+                };
+                var p = new UserLogic(ConfigurationManager.ConnectionStrings["PMMM"].ConnectionString);
+                if (p.Login(a))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Given data most likely was incorrect");
+                return false;
+            }
+        }
+        private static void CreateUser()
+        {
+            Console.WriteLine("Enter your login:");
+            string log = Console.ReadLine();
+            if (!UserDal.Lookfor(ConfigurationManager.ConnectionStrings["PMMM"].ConnectionString, log))
+            {
+
+                Console.WriteLine("Enter your password:");
+                string pass = Console.ReadLine();
+                UserDTO a = new UserDTO
+                {
+                    login = log,
+                    password = pass
+                };
+                string connStr = ConfigurationManager.ConnectionStrings["PMMM"].ConnectionString;
+                var p = new UserLogic(connStr);
+                p.CreateUser(a);
+            }
+            else
+            {
+                Console.WriteLine("User with that login already exists");
+            }
+        }
         private static void CreateProduct()
         {
             string connStr = ConfigurationManager.ConnectionStrings["PMMM"].ConnectionString;

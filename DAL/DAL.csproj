@@ -46,6 +46,7 @@
     <Compile Include="ADO\HistoryDal.cs" />
     <Compile Include="ADO\OrderDal.cs" />
     <Compile Include="ADO\ProductDal.cs" />
+    <Compile Include="ADO\UserDal.cs" />
     <Compile Include="Interfaces\IClientDal.cs" />
     <Compile Include="Interfaces\ICommsDal.cs" />
     <Compile Include="Interfaces\IHistoryDal.cs" />
